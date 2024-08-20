@@ -13,7 +13,7 @@ stk.append(5)
 stk.append(4)
 stk.append(3)
 
-stk
+print(stk)
 
 # Pop from stack - O(1)
 x = stk.pop()
@@ -35,16 +35,15 @@ q = deque()
 q.append(5)
 q.append(6)
 q.append(7)
-q
+print(q)
 
 # Deqeue (pop left) - Remove element from the left - O(1)
 q.popleft()
 
-q
+print(q)
 
 # Peek from left side - O(1)
-q[0]
+print(q[0])
 
 # Peek from right side - O(1)
-q[-1]
-
+print(q[-1])
