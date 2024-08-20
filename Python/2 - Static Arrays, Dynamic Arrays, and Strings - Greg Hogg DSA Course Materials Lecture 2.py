@@ -44,5 +44,5 @@ if 'f' in s:
 print(s[2])
 
 # Check length of string - O(1)
-len(s)
+print(len(s))
 
