@@ -91,7 +91,7 @@ def search(node, target):
 
   return search(node.left, target) or search(node.right, target)
 
-search(A, 11)
+print(search(A, 11))
 
 # Binary Search Trees (BSTs)
 
@@ -126,5 +126,4 @@ def search_bst(node, target):
   if target < node.val: return search_bst(node.left, target)
   else: return search_bst(node.right, target)
 
-search_bst(A2, -1)
-
+print(search_bst(A2, -1))
