@@ -20,7 +20,7 @@ def bubble_sort(arr):
         arr[i-1], arr[i] = arr[i], arr[i-1]
 
 bubble_sort(A)
-A
+print(A)
 
 # Insertion Sort
 # Time: O(n^2)
@@ -38,7 +38,7 @@ def insertion_sort(arr):
         break
 
 insertion_sort(B)
-B
+print(B)
 
 # Selection Sort
 # Time: O(n^2)
@@ -56,7 +56,7 @@ def selection_sort(arr):
     arr[i], arr[min_index] = arr[min_index], arr[i]
 
 selection_sort(C)
-C
+print(C)
 
 # Merge Sort
 # Time: O(n log n)
@@ -106,7 +106,7 @@ def merge_sort(arr):
 
   return sorted_arr
 
-merge_sort(D)
+print(merge_sort(D))
 
 # Quick Sort
 # Time: O(n log n) (Average case, technically Worst case is O(n^2))
@@ -128,7 +128,7 @@ def quick_sort(arr):
 
   return L + [p] + R
 
-quick_sort(E)
+print(quick_sort(E))
 
 # Counting Sort
 # Time: O(n + k) where k is the range of data
@@ -156,7 +156,7 @@ def counting_sort(arr):
       counts[c] -= 1
 
 counting_sort(F)
-F
+print(F)
 
 # What we usually do in practice
 
@@ -167,7 +167,7 @@ G = [-5, 3, 2, 1, -3, -3, 7, 2, 2]
 # In place (constant space)
 G.sort()
 
-G
+print(G)
 
 # Get new sorted array - O(n) space
 
@@ -175,7 +175,7 @@ H = [-5, 3, 2, 1, -3, -3, 7, 2, 2]
 
 sorted_H = sorted(H)
 
-H, sorted_H
+print(H, sorted_H)
 
 # Sort array of tuples
 
@@ -183,5 +183,5 @@ I = [(-5, 3), (2, 1), (-3, -3), (7, 2), (2, 2)]
 
 sorted_I = sorted(I, key = lambda t: -t[1])
 
-sorted_I
+print(sorted_I)
 
