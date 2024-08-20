@@ -11,21 +11,21 @@ A = [-4, 3, 1, 0, 2, 5, 10, 8, 12, 9]
 import heapq
 heapq.heapify(A)
 
-A
+print(A)
 
 # Heap Push (Insert element)
 # Time: O(log n)
 
 heapq.heappush(A, 4)
 
-A
+print(A)
 
 # Heap Pop (Extract min)
 # Time: O(log n)
 
 minn = heapq.heappop(A)
 
-A, minn
+print(A, minn)
 
 # Heap Sort
 # Time: O(n log n), Space: O(n)
@@ -42,15 +42,15 @@ def heapsort(arr):
 
   return new_list
 
-heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])
+print(heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0]))
 
 # Heap Push Pop: Time: O(log n)
 
 heapq.heappushpop(A, 99)
-A
+print(A)
 
 # Peak at Min: Time O(1)
-A[0]
+print(A[0])
 
 # Max Heap
 
@@ -62,15 +62,15 @@ for i in range(n):
 
 heapq.heapify(B)
 
-B
+print(B)
 
 largest = -heapq.heappop(B)
 
-largest
+print(largest)
 
 heapq.heappush(B, -7) # Insert 7 into max heap
 
-B
+print(B)
 
 # Build heap from scratch - Time: O(n log n)
 
@@ -90,11 +90,11 @@ from collections import Counter
 
 counter = Counter(D)
 
-counter
+print(counter)
 
 heap = []
 
 for k, v in counter.items():
   heapq.heappush(heap, (v, k))
 
-heap
+print(heap)
