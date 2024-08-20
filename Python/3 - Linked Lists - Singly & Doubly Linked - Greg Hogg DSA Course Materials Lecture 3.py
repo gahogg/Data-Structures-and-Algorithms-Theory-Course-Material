@@ -53,7 +53,7 @@ def search(head, val):
 
   return False
 
-search(Head, 7)
+print(search(Head, 7))
 
 # Doubly Linked Lists
 
