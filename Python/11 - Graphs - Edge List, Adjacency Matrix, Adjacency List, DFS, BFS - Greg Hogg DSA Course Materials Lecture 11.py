@@ -6,7 +6,7 @@
 n = 8
 A = [[0, 1], [1, 2], [0, 3], [3, 4], [3, 6], [3, 7], [4, 2], [4, 5], [5, 2]]
 
-A
+print(A)
 
 # Convert Array of Edges -> Adjacency Matrix
 
@@ -20,7 +20,7 @@ for u, v in A:
   # Uncomment the following line if the graph is undirected
   # M[v][u] = 1
 
-M
+print(M)
 
 # Convert Array of Edges -> Adjacency List
 from collections import defaultdict
@@ -32,9 +32,9 @@ for u, v in A:
   # Uncomment the following line if the graph is undirected
   # D[v].append(u)
 
-D
+print(D)
 
-D[3]
+print(D[3])
 
 # DFS with Recursion - O(V + E) where V is the number of nodes and E is the number of edges
 
@@ -108,5 +108,4 @@ B.neighbors.append(A)
 C.neighbors.append(D)
 D.neighbors.append(C)
 
-B.display()
-
+print(B.display())
