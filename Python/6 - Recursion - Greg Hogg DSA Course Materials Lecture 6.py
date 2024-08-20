@@ -17,6 +17,7 @@ def F(n):
   else:
     return F(n-1) + F(n-2)
 
+print(F(10))
 
 
 # Linked Lists
