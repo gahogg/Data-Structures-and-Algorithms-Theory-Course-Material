@@ -28,7 +28,7 @@ print(s)
 string = 'aaaaaaabbbbbbbbbbbccccccccceeeeeeeee'
 sett = set(string)
 
-sett
+print(sett)
 
 # Loop over items in set - O(n)
 for x in s:
@@ -62,9 +62,9 @@ from collections import defaultdict
 
 default = defaultdict(list)
 
-default[2]
+print(default[2])
 
-default
+print(default)
 
 # Counter
 from collections import Counter
