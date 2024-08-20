@@ -29,7 +29,7 @@ def binary_search(arr, target):
 
   return False
 
-binary_search(A, 8)
+print(binary_search(A, 8))
 
 # Condition based
 B = [False, False, False, False, False, False, True]
@@ -49,5 +49,4 @@ def binary_search_condition(arr):
 
   return L
 
-binary_search_condition(B)
-
+print(binary_search_condition(B))
