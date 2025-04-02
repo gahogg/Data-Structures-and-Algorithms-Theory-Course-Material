@@ -32,7 +32,7 @@ while curr:
   print(curr)
   curr = curr.next
 
-# Diplay linked list - O(n)
+# Display linked list - O(n)
 def display(head):
   curr = head
   elements = []
