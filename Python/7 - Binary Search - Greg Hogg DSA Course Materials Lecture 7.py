@@ -44,7 +44,7 @@ def binary_search_condition(arr):
   while L < R:
     M = (L + R) // 2
 
-    if B[M]:
+    if arr[M]:
       R = M
     else:
       L = M + 1
